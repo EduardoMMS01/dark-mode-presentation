@@ -31,10 +31,12 @@ body * {
 
 body {
     background: var(--bg-url) no-repeat top/cover;
+    height: 100vh;
 }
 
 #container {
-    width: 360px;
+    width: 100%;
+    max-width: 510px;
     margin: 56px auto 0px;
     padding: 0 24px;
 }
@@ -45,7 +47,7 @@ body {
 }
 
 #profile img {
-    width: 112px;
+    width: 130px;
 }
 
 #profile p {
@@ -71,6 +73,7 @@ body {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .light #switch button {
@@ -143,4 +146,14 @@ footer {
     text-align: center;
     padding: 24px 0;
     font-size: 14px;
+}
+
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg)
+    }
+
+    .light {
+        --bg-url: url(./assets/bg-desktop-light.jpg)
+    }
 }
