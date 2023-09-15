@@ -31,7 +31,6 @@ body * {
 
 body {
     background: var(--bg-url) no-repeat top/cover;
-    height: 95vh;
 }
 
 #container {
