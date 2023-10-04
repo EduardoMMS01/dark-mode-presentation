@@ -1,15 +1,42 @@
 const toggleSwitch = () => {
     const bodyClass = document.body.classList
     const img = document.querySelector('#profile img')
+    const htmlIcon = document.querySelector('#tech-links #htmlIcon')
+    const cssIcon = document.querySelector('#tech-links #cssIcon')
+    const jsIcon = document.querySelector('#tech-links #jsIcon')
+    const reactIcon = document.querySelector('#tech-links #reactIcon')
+    const tsIcon = document.querySelector('#tech-links #tsIcon')
+    const nodejsIcon = document.querySelector('#tech-links #nodejsIcon')
+    const wordpressIcon = document.querySelector('#tech-links #wordpressIcon')
+    const gitIcon = document.querySelector('#tech-links #gitIcon')
+    const sqlIcon = document.querySelector('#tech-links #sqlIcon')
+    const linuxIcon = document.querySelector('#tech-links #linuxIcon')
 
-    bodyClass.contains('light') 
-        ? bodyClass.remove('light')
-        : bodyClass.add('light')
-
-    bodyClass.contains('light')
-        ? img.setAttribute('src', './assets/avatar-light.png')
-        : img.setAttribute('src', './assets/avatar.png')
+    if (bodyClass.contains('light')) {
+        bodyClass.remove('light')
+        img.setAttribute('src', './assets/avatar.png')
+        htmlIcon.setAttribute('src', './assets/tech-icons/html5-icon-light.svg')
+        cssIcon.setAttribute('src', './assets/tech-icons/css3-icon-light.svg')
+        jsIcon.setAttribute('src', './assets/tech-icons/js-icon-light.svg')
+        reactIcon.setAttribute('src', './assets/tech-icons/react-icon-light.svg')
+        tsIcon.setAttribute('src', './assets/tech-icons/ts-icon-light.svg')
+        nodejsIcon.setAttribute('src', './assets/tech-icons/nodejs-icon-light.svg')
+        gitIcon.setAttribute('src', './assets/tech-icons/git-icon-light.svg')
+        wordpressIcon.setAttribute('src', './assets/tech-icons/wordpress-icon-light.svg')
+        sqlIcon.setAttribute('src', './assets/tech-icons/sql-icon-light.svg')
+        linuxIcon.setAttribute('src', './assets/tech-icons/linux-icon-light.svg')
+    } else {
+        bodyClass.add('light')
+        img.setAttribute('src', './assets/avatar-light.png')
+        htmlIcon.setAttribute('src', './assets/tech-icons/html5-icon.svg')
+        cssIcon.setAttribute('src', './assets/tech-icons/css3-icon.svg')
+        jsIcon.setAttribute('src', './assets/tech-icons/js-icon.svg')
+        tsIcon.setAttribute('src', './assets/tech-icons/ts-icon.svg')
+        reactIcon.setAttribute('src', './assets/tech-icons/react-icon.svg')
+        nodejsIcon.setAttribute('src', './assets/tech-icons/nodejs-icon.svg')
+        gitIcon.setAttribute('src', './assets/tech-icons/git-icon.svg')
+        wordpressIcon.setAttribute('src', './assets/tech-icons/wordpress-icon.svg')
+        sqlIcon.setAttribute('src', './assets/tech-icons/sql-icon.svg')
+        linuxIcon.setAttribute('src', './assets/tech-icons/linux-icon.svg')
+    }
 }
-
-// Dica que já faria tudo por tras dos panos do primeiro ternário:
-// bodyClass.toggle('light')
