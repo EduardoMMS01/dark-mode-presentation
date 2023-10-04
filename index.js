@@ -10,6 +10,8 @@ const toggleSwitch = () => {
     const wordpressIcon = document.querySelector('#tech-links #wordpressIcon')
     const gitIcon = document.querySelector('#tech-links #gitIcon')
     const sqlIcon = document.querySelector('#tech-links #sqlIcon')
+    const postgresqlIcon = document.querySelector('#tech-links #postgresqlIcon')
+    const mongodbIcon = document.querySelector('#tech-links #mongodbIcon')
     const linuxIcon = document.querySelector('#tech-links #linuxIcon')
 
     if (bodyClass.contains('light')) {
@@ -24,6 +26,8 @@ const toggleSwitch = () => {
         gitIcon.setAttribute('src', './assets/tech-icons/git-icon-light.svg')
         wordpressIcon.setAttribute('src', './assets/tech-icons/wordpress-icon-light.svg')
         sqlIcon.setAttribute('src', './assets/tech-icons/sql-icon-light.svg')
+        postgresqlIcon.setAttribute('src', './assets/tech-icons/postgresql-icon-light.svg')
+        mongodbIcon.setAttribute('src', './assets/tech-icons/mongodb-icon-light.svg')
         linuxIcon.setAttribute('src', './assets/tech-icons/linux-icon-light.svg')
     } else {
         bodyClass.add('light')
@@ -37,6 +41,8 @@ const toggleSwitch = () => {
         gitIcon.setAttribute('src', './assets/tech-icons/git-icon.svg')
         wordpressIcon.setAttribute('src', './assets/tech-icons/wordpress-icon.svg')
         sqlIcon.setAttribute('src', './assets/tech-icons/sql-icon.svg')
+        postgresqlIcon.setAttribute('src', './assets/tech-icons/postgresql-icon.svg')
+        mongodbIcon.setAttribute('src', './assets/tech-icons/mongodb-icon.svg')
         linuxIcon.setAttribute('src', './assets/tech-icons/linux-icon.svg')
     }
 }
